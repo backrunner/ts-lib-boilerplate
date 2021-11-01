@@ -11,6 +11,7 @@ mkdir YOUR_PROJECT_NAME
 cd ./YOUR_PROJECT_NAME
 git clone -b main --depth -1 https://github.com/backrunner/ts-lib-boilerplate.git .
 rm -rf .git # remove git folder to create your own git repo
+npm install
 ```
 
 Then modify the `package.json` and this `Readme.md`.
