@@ -1,6 +1,6 @@
 {
   "name": "ts-lib-boilerplate",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Typescript library boilerplate",
   "main": "dist/lib.umd.js",
   "module": "dist/lib.esm.js",
@@ -9,6 +9,9 @@
     "boilerplate",
     "typescript",
     "lib"
+  ],
+  "files": [
+    "dist"
   ],
   "scripts": {
     "watch": "rollup -c rollup.config.ts -w",
