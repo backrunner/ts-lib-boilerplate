@@ -10,12 +10,7 @@ import pkg from './package.json';
 const plugins = [json(), typescript({ useTsconfigDeclarationDir: true }), commonjs(), resolve(), sourceMaps()];
 
 if (process.env.NODE_ENV === 'production') {
-  plugins.push(
-    filesize({
-      showMinifiedSize: false,
-    }),
-    terser(),
-  );
+  plugins.push(filesize({ showMinifiedSize: false, showBrotliSize: true }), terser());
 }
 
 export default {
