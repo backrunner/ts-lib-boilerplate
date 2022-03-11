@@ -4,7 +4,19 @@ import json from '@rollup/plugin-json';
 import sourceMaps from 'rollup-plugin-sourcemaps';
 import typescript from 'rollup-plugin-typescript2';
 import filesize from 'rollup-plugin-filesize';
+import { terser } from 'rollup-plugin-terser';
 import pkg from './package.json';
+
+const plugins = [json(), typescript({ useTsconfigDeclarationDir: true }), commonjs(), resolve(), sourceMaps()];
+
+if (process.env.NODE_ENV === 'production') {
+  plugins.push(
+    filesize({
+      showMinifiedSize: false,
+    }),
+    terser(),
+  );
+}
 
 export default {
   input: `src/main.ts`,
@@ -16,5 +28,5 @@ export default {
   watch: {
     include: 'src/**',
   },
-  plugins: [json(), typescript({ useTsconfigDeclarationDir: true }), commonjs(), resolve(), sourceMaps(), filesize()],
+  plugins,
 };
