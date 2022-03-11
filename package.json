@@ -14,8 +14,8 @@
     "dist"
   ],
   "scripts": {
-    "watch": "rollup -c rollup.config.ts -w",
-    "build": "rimraf ./dist && tsc --module commonjs && rollup -c rollup.config.ts && rimraf ./dist/lib"
+    "watch": "cross-env NODE_ENV=dev rollup -c rollup.config.ts -w",
+    "build": "rimraf ./dist && tsc --module commonjs && cross-env NODE_ENV=production rollup -c rollup.config.ts && rimraf ./dist/lib"
   },
   "author": "BackRunner",
   "license": "MIT",
