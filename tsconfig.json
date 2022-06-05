@@ -20,5 +20,6 @@
     "resolveJsonModule": true,
     "esModuleInterop": true
   },
-  "include": ["src", "rollup.config.ts"]
+  "include": ["src"],
+  "exclude": ["rollup.config.ts"]
 }
