@@ -1,6 +1,6 @@
 {
   "name": "ts-lib-boilerplate",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "Typescript library boilerplate",
   "main": "dist/lib.umd.js",
   "module": "dist/lib.esm.js",
