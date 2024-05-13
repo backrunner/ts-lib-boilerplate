@@ -1,6 +1,6 @@
 {
   "name": "ts-lib-boilerplate",
-  "version": "2.0.0",
+  "version": "2.0.1",
   "description": "Typescript library boilerplate",
   "main": "dist/lib.umd.js",
   "module": "dist/lib.esm.js",
@@ -26,19 +26,19 @@
     "@rollup/plugin-node-resolve": "^15.2.3",
     "@rollup/plugin-terser": "^0.4.4",
     "@rollup/plugin-typescript": "^11.1.6",
-    "@types/node": "^20.11.28",
-    "@typescript-eslint/eslint-plugin": "^7.2.0",
-    "@typescript-eslint/parser": "^7.2.0",
+    "@types/node": "^20.12.11",
+    "@typescript-eslint/eslint-plugin": "^7.8.0",
+    "@typescript-eslint/parser": "^7.8.0",
     "cross-env": "^7.0.3",
     "eslint": "^8.57.0",
     "eslint-config-alloy": "^5.1.2",
     "eslint-config-prettier": "^9.1.0",
     "eslint-plugin-import": "^2.29.1",
     "prettier": "^3.2.5",
-    "rimraf": "^5.0.5",
-    "rollup": "^4.13.0",
+    "rimraf": "^5.0.7",
+    "rollup": "^4.17.2",
     "rollup-plugin-filesize": "^10.0.0",
     "tslib": "^2.6.2",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.5"
   }
 }
