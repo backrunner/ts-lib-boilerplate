@@ -1,15 +1,14 @@
-
-import path from 'node:path';
 import { readFileSync } from 'node:fs';
-import { fileURLToPath } from 'node:url'
-import { defineConfig } from 'rollup';
-import filesize from 'rollup-plugin-filesize';
+import path from 'node:path';
+import { fileURLToPath } from 'node:url';
 
-import resolve from '@rollup/plugin-node-resolve';
 import commonjs from '@rollup/plugin-commonjs';
 import json from '@rollup/plugin-json';
+import resolve from '@rollup/plugin-node-resolve';
 import terser from '@rollup/plugin-terser';
 import typescript from '@rollup/plugin-typescript';
+import { defineConfig } from 'rollup';
+import filesize from 'rollup-plugin-filesize';
 
 const packageJsonPath = path.resolve(path.dirname(fileURLToPath(import.meta.url)), './package.json');
 const pkg = JSON.parse(readFileSync(packageJsonPath, { encoding: 'utf-8' }));
