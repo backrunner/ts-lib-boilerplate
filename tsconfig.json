@@ -17,6 +17,7 @@
     "forceConsistentCasingInFileNames": true,
     "allowJs": false,
     "resolveJsonModule": true,
+    "noImplicitAny": true,
     "esModuleInterop": true
   },
   "include": ["src"],
