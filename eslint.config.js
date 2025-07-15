@@ -1,9 +1,14 @@
-module.exports = {
-  extends: ['alloy', 'alloy/typescript', 'prettier'],
-  env: {
-    node: true,
+import antfu from '@antfu/eslint-config';
+
+export default antfu({
+  type: 'lib',
+  typescript: true,
+  stylistic: {
+    indent: 2,
+    quotes: 'single',
+    semi: true,
+    trailingComma: 'all',
   },
-  plugins: ['import'],
   rules: {
     'import/order': [
       'warn',
@@ -14,4 +19,4 @@ module.exports = {
       },
     ],
   },
-};
+});

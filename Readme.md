@@ -1,6 +1,6 @@
 # ts-lib-boilerplate
 
-This is a minimal Typescript library boilerplate, including `eslint` with `eslint-config-alloy` and `prettier`.
+This is a minimal Typescript library boilerplate, including `eslint` with `@antfu/eslint-config` and `prettier`.
 
 ## How to use
 
