@@ -9,14 +9,17 @@ export default antfu({
     semi: true,
     trailingComma: 'all',
   },
+  formatters: false,
   rules: {
-    'import/order': [
-      'warn',
-      {
-        groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
-        'newlines-between': 'always',
-        alphabetize: { order: 'asc', caseInsensitive: true },
-      },
-    ],
+    'style/brace-style': ['error', '1tbs'],
+    'style/comma-dangle': ['error', 'always-multiline'],
+    'style/comma-spacing': ['error', { before: false, after: true }],
+    'style/indent': ['error', 2],
+    'style/quotes': ['error', 'single'],
+    'style/semi': ['error', 'always'],
+    'style/space-before-blocks': 'error',
+    'style/space-before-function-paren': ['error', 'never'],
+    'style/object-curly-spacing': ['error', 'always'],
+    'style/array-bracket-spacing': ['error', 'never'],
   },
 });
